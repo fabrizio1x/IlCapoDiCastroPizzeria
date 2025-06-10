@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sin conexión - Il Capo di Castro</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #2a1511;
+      color: #e6c8b3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 500px;
+      padding: 40px;
+      background-color: #3a1a12;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      border: 2px solid #5c2b1b;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #e67e51;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+    .flame {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      animation: flicker 3s infinite alternate;
+    }
+    .button {
+      background-color: #e67e51;
+      color: #1e0d0a;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .button:hover {
+      background-color: #ff5500;
+      transform: scale(1.05);
+    }
+    @keyframes flicker {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.8; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="flame">🔥</div>
+    <h1>Sin conexión</h1>
+    <p>Parece que no tienes conexión a internet. Nuestro horno sigue encendido, pero necesitas conexión para hacer tu pedido.</p>
+    <a href="/" class="button">Intentar nuevamente</a>
+  </div>
+  <script>
+    // Verificar conexión periódicamente
+    function checkConnection() {
+      if (navigator.onLine) {
+        window.location.reload();
+      }
+    }
+    
+    // Comprobar cada 5 segundos
+    setInterval(checkConnection, 5000);
+    
+    // También comprobar cuando el navegador detecte que volvió a estar online
+    window.addEventListener('online', () => {
+      window.location.reload();
+    });
+  </script>
+</body>
+</html>
