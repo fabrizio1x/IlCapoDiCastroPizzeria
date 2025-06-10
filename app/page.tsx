@@ -129,7 +129,7 @@ function PageContent() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/20"></div>
           <div className="absolute inset-0">
             <Image
-              src="/images/horno-lena.webp"
+              src="/images/pizza-con.horno-de-fondo.webp"
               alt="Horno a leña con fuego ardiente y brasas"
               fill
               className="object-cover theme-transition-element"
@@ -328,7 +328,7 @@ function PageContent() {
                     style={{ backgroundColor: "var(--bg-secondary)" }}
                   >
                     <Image
-                      src="/placeholder.svg?height=600&width=600"
+                      src="/images/maestropizzaiolo.webp"
                       alt="Maestro pizzaiolo junto al horno a leña en ambiente cálido de cabaña"
                       width={600}
                       height={600}

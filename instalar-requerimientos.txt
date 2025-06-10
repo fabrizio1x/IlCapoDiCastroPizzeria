@@ -1,0 +1,24 @@
+COMANDOS PARA INSTALAR REQUERIMIENTOS - PIZZERIA IL CAPO DI CASTRO
+==================================================================
+
+EJECUTAR EN: PowerShell o Command Prompt (CMD)
+
+1. Verificar que Node.js esté instalado:
+   node --version
+
+2. Instalar PNPM globalmente (si no lo tienes):
+   npm install -g pnpm
+
+3. Verificar que PNPM esté instalado:
+   pnpm --version
+
+4. Instalar dependencias del proyecto:
+   pnpm install
+
+5. Iniciar el servidor de desarrollo:
+   pnpm dev
+
+NOTAS:
+- Si Node.js no está instalado, descárgalo desde: https://nodejs.org/
+- Asegúrate de estar en la carpeta del proyecto antes de ejecutar 'pnpm install'
+- El servidor se ejecutará en http://localhost:3000
