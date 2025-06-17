@@ -37,7 +37,7 @@ App de menú de pizzas desarrollada con **Next.js**, **Firebase**, **TailwindCSS
 ### Requisitos
 1. Node.js (v16 o superior).
 2. PNPM como gestor de paquetes.
-3. Una cuenta de Firebase(Si escoges esta base de datos para el proyecto)
+3. Una cuenta de Firebase.
 
 ### Instalación
 1. Clona este repositorio:
